@@ -1,0 +1,16 @@
+slug: aws-iam
+title: Aws iam
+description: ''
+summary: Monitor Aws iam by connecting AWS to New Relic
+level: New Relic
+authors: New Relic
+keywords:
+  - aws
+  - amazon web service
+documentation:
+  name: ''
+  url: ''
+  description: ''
+icon: logo.svg
+dashboards: aws-iam
+installPlans: aws-infrastructure-monitoring

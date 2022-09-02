@@ -1,0 +1,16 @@
+slug: aws-health
+title: Aws health
+description: ''
+summary: Monitor Aws health by connecting AWS to New Relic
+level: New Relic
+authors: New Relic
+keywords:
+  - aws
+  - amazon web service
+documentation:
+  name: ''
+  url: ''
+  description: ''
+icon: logo.svg
+dashboards: aws-health
+installPlans: aws-infrastructure-monitoring

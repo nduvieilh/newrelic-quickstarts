@@ -1,0 +1,16 @@
+slug: aws-elasticache-memcached
+title: Aws elasticache memcached
+description: ''
+summary: Monitor Aws elasticache memcached by connecting AWS to New Relic
+level: New Relic
+authors: New Relic
+keywords:
+  - aws
+  - amazon web service
+documentation:
+  name: ''
+  url: ''
+  description: ''
+icon: logo.svg
+dashboards: aws-elasticache-memcached
+installPlans: aws-infrastructure-monitoring

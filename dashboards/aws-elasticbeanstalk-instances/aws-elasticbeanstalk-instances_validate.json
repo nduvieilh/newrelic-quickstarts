@@ -1,0 +1,128 @@
+{
+    "name": "Aws elasticbeanstalk instances",
+    "description": "",
+    "pages": [
+        {
+            "name": "Aws elasticbeanstalk instances",
+            "description": "",
+            "widgets": [
+                {
+                    "title": "Instance health",
+                    "layout": {
+                        "height": 3,
+                        "width": 4,
+                        "row": 1,
+                        "column": 1
+                    },
+                    "visualization": {
+                        "id": "viz.line"
+                    },
+                    "rawConfiguration": {
+                        "nrqlQueries": [
+                            {
+                                "accountId": 1,
+                                "query": "SELECT max(`aws.elasticbeanstalk.InstanceHealth`) FROM Metric FACET `aws.elasticbeanstalk.InstanceId` TIMESERIES auto"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "title": "Requests per instance",
+                    "layout": {
+                        "height": 3,
+                        "width": 4,
+                        "row": 1,
+                        "column": 5
+                    },
+                    "visualization": {
+                        "id": "viz.area"
+                    },
+                    "rawConfiguration": {
+                        "nrqlQueries": [
+                            {
+                                "accountId": 1,
+                                "query": "SELECT sum(`aws.elasticbeanstalk.ApplicationRequestsTotal.byInstance`) FROM Metric FACET `aws.elasticbeanstalk.InstanceId` TIMESERIES AUTO"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "title": "",
+                    "layout": {
+                        "height": 6,
+                        "width": 4,
+                        "row": 1,
+                        "column": 9
+                    },
+                    "visualization": {
+                        "id": "viz.markdown"
+                    },
+                    "rawConfiguration": {
+                        "text": "::: beyond\n![Amazon Elastic Beanstalk Icon](https://integrations.nr-assets.net/providers/aws_elasticbeanstalk.png) **Amazon Beanstalk**\n\nWith AWS Elastic Beanstalk, you can quickly deploy and manage applications in the AWS Cloud without worrying about the infrastructure that runs those applications. AWS Elastic Beanstalk reduces management complexity without restricting choice or control. You simply upload your application, and AWS Elastic Beanstalk automatically handles the details of capacity provisioning, load balancing, scaling, and application health monitoring.\n\nEach chart is reporting every minute.\n\n\n:::"
+                    }
+                },
+                {
+                    "title": "4xx requests",
+                    "layout": {
+                        "height": 3,
+                        "width": 4,
+                        "row": 4,
+                        "column": 1
+                    },
+                    "visualization": {
+                        "id": "viz.area"
+                    },
+                    "rawConfiguration": {
+                        "nrqlQueries": [
+                            {
+                                "accountId": 1,
+                                "query": "SELECT average(`aws.elasticbeanstalk.ApplicationRequests4xx.byInstance`) AS Error4xx FROM Metric TIMESERIES auto FACET `aws.elasticbeanstalk.InstanceId`"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "title": "5xx requests",
+                    "layout": {
+                        "height": 3,
+                        "width": 4,
+                        "row": 4,
+                        "column": 5
+                    },
+                    "visualization": {
+                        "id": "viz.area"
+                    },
+                    "rawConfiguration": {
+                        "nrqlQueries": [
+                            {
+                                "accountId": 1,
+                                "query": "SELECT average(`aws.elasticbeanstalk.ApplicationRequests5xx.byInstance`) AS Error5xx FROM Metric TIMESERIES auto FACET `aws.elasticbeanstalk.InstanceId`"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "title": "Load average",
+                    "layout": {
+                        "height": 3,
+                        "width": 8,
+                        "row": 7,
+                        "column": 1
+                    },
+                    "visualization": {
+                        "id": "viz.line"
+                    },
+                    "rawConfiguration": {
+                        "nrqlQueries": [
+                            {
+                                "accountId": 1,
+                                "query": "SELECT max(`aws.elasticbeanstalk.LoadAverage1min`) FROM Metric FACET `aws.elasticbeanstalk.InstanceId` TIMESERIES auto"
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    ],
+    "permissions": "PUBLIC_READ_WRITE"
+}

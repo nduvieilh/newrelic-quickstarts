@@ -1,0 +1,16 @@
+slug: aws-elasticbeanstalk-instances
+title: Aws elasticbeanstalk instances
+description: ''
+summary: Monitor Aws elasticbeanstalk instances by connecting AWS to New Relic
+level: New Relic
+authors: New Relic
+keywords:
+  - aws
+  - amazon web service
+documentation:
+  name: ''
+  url: ''
+  description: ''
+icon: logo.svg
+dashboards: aws-elasticbeanstalk-instances
+installPlans: aws-infrastructure-monitoring

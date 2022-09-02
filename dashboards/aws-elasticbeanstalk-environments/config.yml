@@ -1,0 +1,16 @@
+slug: aws-elasticbeanstalk-environments
+title: Aws elasticbeanstalk environments
+description: ''
+summary: Monitor Aws elasticbeanstalk environments by connecting AWS to New Relic
+level: New Relic
+authors: New Relic
+keywords:
+  - aws
+  - amazon web service
+documentation:
+  name: ''
+  url: ''
+  description: ''
+icon: logo.svg
+dashboards: aws-elasticbeanstalk-environments
+installPlans: aws-infrastructure-monitoring
