@@ -35,5 +35,6 @@ keywords:
   - deploy
 dashboards:
   - aws-elasticbeanstalk-environments
+  - aws-elasticbeanstalk-instances
 installPlans:
   - aws-cloudwatch-metric-streams
