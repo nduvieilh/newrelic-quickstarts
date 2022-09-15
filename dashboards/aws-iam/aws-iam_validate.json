@@ -18,7 +18,7 @@
                         "id": "viz.markdown"
                     },
                     "rawConfiguration": {
-                        "text": "::: beyond\n![Amazon IAM Icon](https://integrations.nr-assets.net/providers/aws_iam.png) **AWS IAM** \n\nAWS Identity and Access Management (IAM) is a web service that helps you securely control access to AWS resources for your users. You use IAM to control who can use your AWS resources (authentication) and what resources they can use and in what ways (authorization).\n\nEach chart is reporting every minute.\n\n\n:::"
+                        "text": "\n![Amazon IAM Icon](https://integrations.nr-assets.net/providers/aws_iam.png) **AWS IAM** \n\nAWS Identity and Access Management (IAM) is a web service that helps you securely control access to AWS resources for your users. You use IAM to control who can use your AWS resources (authentication) and what resources they can use and in what ways (authorization).\n\nEach chart is reporting every minute.\n\n\n"
                     }
                 },
                 {

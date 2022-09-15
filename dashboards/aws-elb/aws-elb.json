@@ -38,7 +38,7 @@
                         "id": "viz.markdown"
                     },
                     "rawConfiguration": {
-                        "text": "::: beyond\n![AWS ELB Icon](https://integrations.nr-assets.net/providers/aws_elb.png) **AWS ELB** \n\nElastic Load Balancing automatically distributes incoming application traffic across multiple Amazon EC2 instances. It enables you to achieve fault tolerance in your applications, seamlessly providing the required amount of load balancing capacity needed to route application traffic.\n\nEach chart is reporting every minute.\n\n\n:::"
+                        "text": "\n![AWS ELB Icon](https://integrations.nr-assets.net/providers/aws_elb.png) **AWS ELB** \n\nElastic Load Balancing automatically distributes incoming application traffic across multiple Amazon EC2 instances. It enables you to achieve fault tolerance in your applications, seamlessly providing the required amount of load balancing capacity needed to route application traffic.\n\nEach chart is reporting every minute.\n\n\n"
                     }
                 },
                 {
