@@ -1,13 +1,13 @@
 {
-    "name": "Aws elb",
+    "name": "AWS ELB",
     "description": "",
     "pages": [
         {
-            "name": "Aws elb",
+            "name": "AWS ELB",
             "description": "",
             "widgets": [
                 {
-                    "title": "Requests, by elb",
+                    "title": "Requests, by ELB",
                     "layout": {
                         "height": 3,
                         "width": 8,
@@ -56,7 +56,7 @@
                         "nrqlQueries": [
                             {
                                 "accountId": 0,
-                                "query": "SELECT average(`aws.elb.Latency`) as 'seconds' FROM Metric WHERE   "
+                                "query": "SELECT average(`aws.elb.Latency`) as 'seconds' FROM Metric"
                             }
                         ]
                     }
@@ -82,7 +82,7 @@
                     }
                 },
                 {
-                    "title": "Elbs with no healthy hosts",
+                    "title": "ELBs with no healthy hosts",
                     "layout": {
                         "height": 3,
                         "width": 4,
@@ -96,7 +96,7 @@
                         "nrqlQueries": [
                             {
                                 "accountId": 0,
-                                "query": "SELECT uniqueCount(entity.name) FROM Metric WHERE metricName = 'aws.elb.UnhealthyHostCount' `aws.elb.HealthyHostCount` = 0 UNTIL 6 minutes ago TIMESERIES LIMIT 100 FACET entity.name"
+                                "query": "SELECT uniqueCount(entity.name) FROM Metric WHERE metricName = 'aws.elb.UnhealthyHostCount' AND `aws.elb.HealthyHostCount` = 0 UNTIL 6 minutes ago TIMESERIES LIMIT 100 FACET entity.name"
                             }
                         ]
                     }
@@ -142,7 +142,7 @@
                     }
                 },
                 {
-                    "title": "Average backend response time, by elb",
+                    "title": "Average backend response time, by ELB",
                     "layout": {
                         "height": 3,
                         "width": 12,
@@ -162,7 +162,7 @@
                     }
                 },
                 {
-                    "title": "Elbs, by region",
+                    "title": "ELBs, by region",
                     "layout": {
                         "height": 3,
                         "width": 4,
@@ -202,7 +202,7 @@
                     }
                 },
                 {
-                    "title": "Backend connection errors, by elb",
+                    "title": "Backend connection errors, by ELB",
                     "layout": {
                         "height": 3,
                         "width": 12,
@@ -242,7 +242,7 @@
                     }
                 },
                 {
-                    "title": "Elb service limit usage",
+                    "title": "ELB service limit usage",
                     "layout": {
                         "height": 3,
                         "width": 12,
