@@ -1,9 +1,9 @@
 {
-    "name": "Aws emr",
+    "name": "AWS EMR",
     "description": "",
     "pages": [
         {
-            "name": "Aws emr",
+            "name": "AWS EMR",
             "description": "",
             "widgets": [
                 {
@@ -20,7 +20,7 @@
                     "rawConfiguration": {
                         "nrqlQueries": [
                             {
-                                "accountId": 1,
+                                "accountId": 686923,
                                 "query": "SELECT uniqueCount(entity.id) FROM Metric WHERE metricName = 'aws.elasticmapreduce.TotalLoad' FACET `aws.elasticmapreduce.clusterStatus` TIMESERIES 5 minutes UNTIL 5 minutes ago"
                             }
                         ]
@@ -55,7 +55,7 @@
                     "rawConfiguration": {
                         "nrqlQueries": [
                             {
-                                "accountId": 1,
+                                "accountId": 686923,
                                 "query": "SELECT average(`aws.elasticmapreduce.ContainerAllocated`) as 'Allocated Containers', average(`aws.elasticmapreduce.ContainerReserved`) as 'Reserved Containers', average(`aws.elasticmapreduce.ContainerPending`) as 'Pending Containers' FROM Metric TIMESERIES 5 minutes UNTIL 5 minutes ago"
                             }
                         ]
@@ -75,7 +75,7 @@
                     "rawConfiguration": {
                         "nrqlQueries": [
                             {
-                                "accountId": 1,
+                                "accountId": 686923,
                                 "query": "SELECT average(`aws.elasticmapreduce.AppsCompleted`) as 'Completed Applications', average(`aws.elasticmapreduce.AppsFailed`) as 'Failed Applications', average(`aws.elasticmapreduce.AppsKilled`) as 'Killed Applications', average(`aws.elasticmapreduce.AppsPending`) as 'Pending Applications', average(`aws.elasticmapreduce.AppsRunning`) as 'Running Applications', average(`aws.elasticmapreduce.AppsSubmitted`) as 'Submitted Applications' FROM Metric TIMESERIES 5 minutes UNTIL 5 minutes ago"
                             }
                         ]
@@ -95,7 +95,7 @@
                     "rawConfiguration": {
                         "nrqlQueries": [
                             {
-                                "accountId": 1,
+                                "accountId": 686923,
                                 "query": "SELECT average(`aws.elasticmapreduce.CoreNodesRunning`) as 'Core Nodes Running', average(`aws.elasticmapreduce.CoreNodesPending`) as 'Core Nodes Pending' FROM Metric TIMESERIES 5 minutes UNTIL 5 minutes ago"
                             }
                         ]
@@ -115,7 +115,7 @@
                     "rawConfiguration": {
                         "nrqlQueries": [
                             {
-                                "accountId": 1,
+                                "accountId": 686923,
                                 "query": "SELECT average(`aws.elasticmapreduce.MRTotalNodes`) as 'Total Nodes', average(`aws.elasticmapreduce.MRActiveNodes`) as 'Active Nodes', average(`aws.elasticmapreduce.MRDecommissionedNodes`) as 'Decommissioned Nodes', average(`aws.elasticmapreduce.MRLostNodes`) as 'Lost Nodes', average(`aws.elasticmapreduce.MRRebootedNodes`) as 'Rebooted Nodes' , average(`aws.elasticmapreduce.MRUnhealthyNodes`) as 'Unhealthy Nodes' FROM Metric TIMESERIES 5 minutes UNTIL 5 minutes ago"
                             }
                         ]
@@ -135,7 +135,7 @@
                     "rawConfiguration": {
                         "nrqlQueries": [
                             {
-                                "accountId": 1,
+                                "accountId": 686923,
                                 "query": "SELECT average(`aws.elasticmapreduce.MemoryAllocatedMB`) as 'Allocated Memory', average(`aws.elasticmapreduce.MemoryAvailableMB`) as 'Available Memory', average(`aws.elasticmapreduce.MemoryReservedMB`) as 'Reserved Memory', average(`aws.elasticmapreduce.MemoryTotalMB`) as 'Total Memory' FROM Metric TIMESERIES 5 minutes UNTIL 5 minutes ago"
                             }
                         ]
@@ -155,7 +155,7 @@
                     "rawConfiguration": {
                         "nrqlQueries": [
                             {
-                                "accountId": 1,
+                                "accountId": 686923,
                                 "query": "SELECT average(`aws.elasticmapreduce.TotalLoad`) FROM Metric TIMESERIES 5 minutes FACET entity.name UNTIL 5 minutes ago"
                             }
                         ]
@@ -175,14 +175,14 @@
                     "rawConfiguration": {
                         "nrqlQueries": [
                             {
-                                "accountId": 1,
+                                "accountId": 686923,
                                 "query": "SELECT average(`aws.elasticmapreduce.S3BytesRead`) as 'S3 Read Bytes', average(`aws.elasticmapreduce.S3BytesWritten`) as 'S3 Written Bytes' FROM Metric TIMESERIES auto UNTIL 5 minutes ago"
                             }
                         ]
                     }
                 },
                 {
-                    "title": "Disk (hdfs) status",
+                    "title": "Disk (HDFS) status",
                     "layout": {
                         "height": 3,
                         "width": 4,
@@ -195,7 +195,7 @@
                     "rawConfiguration": {
                         "nrqlQueries": [
                             {
-                                "accountId": 1,
+                                "accountId": 686923,
                                 "query": "SELECT average(`aws.elasticmapreduce.HDFSUtilization`) as 'Disk (HDFS) Utilization', average(`aws.elasticmapreduce.CapacityRemainingGB`) as 'Disk (HDFS) Capacity Remaining' FROM Metric TIMESERIES 5 minutes UNTIL 5 minutes ago"
                             }
                         ]
@@ -215,7 +215,7 @@
                     "rawConfiguration": {
                         "nrqlQueries": [
                             {
-                                "accountId": 1,
+                                "accountId": 686923,
                                 "query": "SELECT average(`aws.elasticmapreduce.JobsRunning`) as 'Jobs Running', average(`aws.elasticmapreduce.JobsFailed`) as 'Jobs Failed' FROM Metric UNTIL 5 minutes ago facet entity.name"
                             }
                         ]
@@ -235,7 +235,7 @@
                     "rawConfiguration": {
                         "nrqlQueries": [
                             {
-                                "accountId": 1,
+                                "accountId": 686923,
                                 "query": "SELECT average(`aws.elasticmapreduce.TaskNodesRunning`) as 'Task Nodes Running', average(`aws.elasticmapreduce.TaskNodesPending`) as 'Task Nodes Pending' FROM Metric TIMESERIES auto UNTIL 5 minutes ago"
                             }
                         ]
@@ -246,8 +246,8 @@
                     "layout": {
                         "height": 3,
                         "width": 4,
-                        "row": 16,
-                        "column": 1
+                        "row": 13,
+                        "column": 9
                     },
                     "visualization": {
                         "id": "viz.line"
@@ -255,7 +255,7 @@
                     "rawConfiguration": {
                         "nrqlQueries": [
                             {
-                                "accountId": 1,
+                                "accountId": 686923,
                                 "query": "SELECT average(`provider.mapTasksRunning`) as 'Map Tasks Running', average(`provider.mapTasksRemaining`) as 'Map Tasks Remaining', average(`aws.elasticmapreduce.MapSlotsOpen`) as 'Unused Task Capacity' FROM Metric TIMESERIES auto UNTIL 5 minutes ago"
                             }
                         ]
@@ -267,7 +267,7 @@
                         "height": 3,
                         "width": 4,
                         "row": 16,
-                        "column": 5
+                        "column": 1
                     },
                     "visualization": {
                         "id": "viz.line"
@@ -275,7 +275,7 @@
                     "rawConfiguration": {
                         "nrqlQueries": [
                             {
-                                "accountId": 1,
+                                "accountId": 686923,
                                 "query": "SELECT average(`provider.reduceTasksRunning`) as 'Reduce Tasks Running', average(`provider.reduceTasksRemaining`) as 'Reduce Tasks Remaining', average(`aws.elasticmapreduce.ReduceSlotsOpen`) as 'Reduce Task Capacity' FROM Metric TIMESERIES auto UNTIL 5 minutes ago"
                             }
                         ]
@@ -286,8 +286,8 @@
                     "layout": {
                         "height": 3,
                         "width": 4,
-                        "row": 19,
-                        "column": 1
+                        "row": 16,
+                        "column": 5
                     },
                     "visualization": {
                         "id": "viz.billboard"
@@ -295,7 +295,7 @@
                     "rawConfiguration": {
                         "nrqlQueries": [
                             {
-                                "accountId": 1,
+                                "accountId": 686923,
                                 "query": "SELECT sum(`provider.backupFailed`) + sum(`provider.hbaseBackupFailed`) as 'Last Backup Failed', average(`provider.mostRecentBackupDuration`) as 'Most Recent Backup Duration', average(`provider.timeSinceLastSuccessfulBackup`) as 'Time Since Last Successful Backup' FROM Metric UNTIL 5 minutes ago"
                             }
                         ]
