@@ -1,13 +1,13 @@
 {
-    "name": "Aws elasticache memcached",
+    "name": "AWS elasticache memcached",
     "description": "",
     "pages": [
         {
-            "name": "Aws elasticache memcached",
+            "name": "AWS elasticache memcached",
             "description": "",
             "widgets": [
                 {
-                    "title": "Cpu utilization, by cluster",
+                    "title": "CPU utilization, by cluster",
                     "layout": {
                         "height": 3,
                         "width": 8,

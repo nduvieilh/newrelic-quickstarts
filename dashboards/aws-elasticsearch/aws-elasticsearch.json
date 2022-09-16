@@ -1,9 +1,9 @@
 {
-    "name": "Aws elasticsearch",
+    "name": "AWS elasticsearch",
     "description": "",
     "pages": [
         {
-            "name": "Aws elasticsearch",
+            "name": "AWS elasticsearch",
             "description": "",
             "widgets": [
                 {
@@ -162,7 +162,7 @@
                     }
                 },
                 {
-                    "title": "Average cpu utilization (%)",
+                    "title": "Average CPU utilization (%)",
                     "layout": {
                         "height": 3,
                         "width": 4,
@@ -202,7 +202,7 @@
                     }
                 },
                 {
-                    "title": "Max cluster used space (gib)",
+                    "title": "Max cluster used space (GiB)",
                     "layout": {
                         "height": 3,
                         "width": 4,
@@ -222,7 +222,7 @@
                     }
                 },
                 {
-                    "title": "Min free storage space (gib)",
+                    "title": "Min free storage space (GiB)",
                     "layout": {
                         "height": 3,
                         "width": 4,
@@ -242,7 +242,7 @@
                     }
                 },
                 {
-                    "title": "Max jvm memory pressure (%)",
+                    "title": "Max JVM memory pressure (%)",
                     "layout": {
                         "height": 3,
                         "width": 4,
@@ -322,7 +322,7 @@
                     }
                 },
                 {
-                    "title": "Average read iops",
+                    "title": "Average read IOPS",
                     "layout": {
                         "height": 3,
                         "width": 4,
@@ -382,7 +382,7 @@
                     }
                 },
                 {
-                    "title": "Average write iops",
+                    "title": "Average write IOPS",
                     "layout": {
                         "height": 3,
                         "width": 4,
@@ -442,7 +442,7 @@
                     }
                 },
                 {
-                    "title": "Master jvm memory pressure (%)",
+                    "title": "Master JVM memory pressure (%)",
                     "layout": {
                         "height": 3,
                         "width": 6,
@@ -462,7 +462,7 @@
                     }
                 },
                 {
-                    "title": "Average master cpu utilization (%)",
+                    "title": "Average master CPU utilization (%)",
                     "layout": {
                         "height": 3,
                         "width": 6,
