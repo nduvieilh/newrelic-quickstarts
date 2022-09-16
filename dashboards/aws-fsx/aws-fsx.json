@@ -1,13 +1,13 @@
 {
-    "name": "Aws fsx",
+    "name": "AWS FSx",
     "description": "",
     "pages": [
         {
-            "name": "Aws fsx",
+            "name": "AWS FSx",
             "description": "",
             "widgets": [
                 {
-                    "title": "Datareadbytes per windowsfileserver",
+                    "title": "DataReadBytes per WindowsFileServer",
                     "layout": {
                         "height": 3,
                         "width": 4,
@@ -27,7 +27,7 @@
                     }
                 },
                 {
-                    "title": "Datawritebytes per windowsfileserver",
+                    "title": "DataWriteBytes per WindowsFileServer",
                     "layout": {
                         "height": 3,
                         "width": 4,
@@ -47,7 +47,7 @@
                     }
                 },
                 {
-                    "title": "Datareadoperations per windowsfileserver",
+                    "title": "DataReadOperations per WindowsFileServer",
                     "layout": {
                         "height": 3,
                         "width": 4,
@@ -67,7 +67,7 @@
                     }
                 },
                 {
-                    "title": "Datawriteoperations per windowsfileserver",
+                    "title": "DataWriteOperations per WindowsFileServer",
                     "layout": {
                         "height": 3,
                         "width": 4,
@@ -87,7 +87,7 @@
                     }
                 },
                 {
-                    "title": "Metadataoperations per windowsfileserver",
+                    "title": "MetadataOperations per WindowsFileServer",
                     "layout": {
                         "height": 3,
                         "width": 4,
@@ -107,7 +107,7 @@
                     }
                 },
                 {
-                    "title": "Freestoragecapacity per windowsfileserver",
+                    "title": "FreeStorageCapacity per WindowsFileServer",
                     "layout": {
                         "height": 3,
                         "width": 4,
