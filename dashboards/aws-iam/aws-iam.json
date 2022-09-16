@@ -1,15 +1,15 @@
 {
-    "name": "Aws iam",
+    "name": "AWS IAM",
     "description": "",
     "pages": [
         {
-            "name": "Aws iam",
+            "name": "AWS IAM",
             "description": "",
             "widgets": [
                 {
                     "title": "",
                     "layout": {
-                        "height": 6,
+                        "height": 3,
                         "width": 4,
                         "row": 1,
                         "column": 9
@@ -42,7 +42,7 @@
                     }
                 },
                 {
-                    "title": "Iam service limit usage",
+                    "title": "IAM service limit usage",
                     "layout": {
                         "height": 3,
                         "width": 12,
