@@ -1,9 +1,9 @@
 {
-    "name": "Aws glue",
+    "name": "AWS glue",
     "description": "",
     "pages": [
         {
-            "name": "Aws glue",
+            "name": "AWS glue",
             "description": "",
             "widgets": [
                 {
@@ -267,7 +267,7 @@
                     }
                 },
                 {
-                    "title": "Driver, jvm heap usage per job",
+                    "title": "Driver, JVM heap usage per job",
                     "layout": {
                         "height": 3,
                         "width": 4,
@@ -287,7 +287,7 @@
                     }
                 },
                 {
-                    "title": "Jvm heap usage per job",
+                    "title": "JVM heap usage per job",
                     "layout": {
                         "height": 3,
                         "width": 4,
@@ -307,7 +307,7 @@
                     }
                 },
                 {
-                    "title": "Driver, jvm heap used per job",
+                    "title": "Driver, JVM heap used per job",
                     "layout": {
                         "height": 3,
                         "width": 4,
@@ -327,7 +327,7 @@
                     }
                 },
                 {
-                    "title": "Jvm heap used per job",
+                    "title": "JVM heap used per job",
                     "layout": {
                         "height": 3,
                         "width": 4,
@@ -347,7 +347,7 @@
                     }
                 },
                 {
-                    "title": "Driver, s3 filesystem read bytes per job",
+                    "title": "Driver, S3 filesystem read bytes per job",
                     "layout": {
                         "height": 3,
                         "width": 4,
@@ -387,7 +387,7 @@
                     }
                 },
                 {
-                    "title": "Driver, s3 filesystem write bytes per job",
+                    "title": "Driver, S3 filesystem write bytes per job",
                     "layout": {
                         "height": 3,
                         "width": 4,
@@ -427,7 +427,7 @@
                     }
                 },
                 {
-                    "title": "Driver, system cpu load per job",
+                    "title": "Driver, system CPU load per job",
                     "layout": {
                         "height": 3,
                         "width": 4,
@@ -447,7 +447,7 @@
                     }
                 },
                 {
-                    "title": "System cpu load per job",
+                    "title": "System CPU load per job",
                     "layout": {
                         "height": 3,
                         "width": 4,
