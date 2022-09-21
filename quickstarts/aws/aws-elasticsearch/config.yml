@@ -6,7 +6,6 @@ description: |-
   Fully managed services for deploying and managing Elasticsearch
   implementations on AWS.
 
-
   ### Get started!
 
   Start monitoring AWS Elasticsearch by connecting Amazon Web Services (AWS) to New Relic!
@@ -33,7 +32,6 @@ keywords:
   - aws
   - amazon web services
 dashboards:
-  - elasticsearch
   - aws-elasticsearch
 installPlans:
   - aws-cloudwatch-metric-streams
