@@ -1,9 +1,9 @@
 {
-    "name": "AWS EMR",
+    "name": "Amazon EMR",
     "description": "",
     "pages": [
         {
-            "name": "AWS EMR",
+            "name": "Amazon EMR",
             "description": "",
             "widgets": [
                 {
@@ -38,7 +38,7 @@
                         "id": "viz.markdown"
                     },
                     "rawConfiguration": {
-                        "text": "\n![AWS EMR Icon](https://integrations.nr-assets.net/providers/emr.png) **Amazon Elastic Map Reduce (EMR)** \n\nAmazon EMR provides a managed Hadoop framework that makes it easy, fast, and cost-effective to process vast amounts of data across dynamically scalable Amazon EC2 instances. You can also run other popular distributed frameworks such as Apache Spark, HBase, Presto, and Flink in Amazon EMR, and interact with data in other AWS data stores such as Amazon S3 and Amazon DynamoDB.\n\nEach chart is reporting every minute.\n\n\n"
+                        "text": "\n![Amazon EMR Icon](https://integrations.nr-assets.net/providers/emr.png) **Amazon Elastic Map Reduce (EMR)** \n\nAmazon EMR provides a managed Hadoop framework that makes it easy, fast, and cost-effective to process vast amounts of data across dynamically scalable Amazon EC2 instances. You can also run other popular distributed frameworks such as Apache Spark, HBase, Presto, and Flink in Amazon EMR, and interact with data in other AWS data stores such as Amazon S3 and Amazon DynamoDB.\n\nEach chart is reporting every minute.\n\n\n"
                     }
                 },
                 {
@@ -142,7 +142,7 @@
                     }
                 },
                 {
-                    "title": "Total load (io)",
+                    "title": "Total load (IO)",
                     "layout": {
                         "height": 3,
                         "width": 4,
@@ -162,7 +162,7 @@
                     }
                 },
                 {
-                    "title": "S3 io bytes",
+                    "title": "S3 IO bytes",
                     "layout": {
                         "height": 3,
                         "width": 4,
@@ -216,7 +216,7 @@
                         "nrqlQueries": [
                             {
                                 "accountId": 0,
-                                "query": "SELECT average(`aws.elasticmapreduce.JobsRunning`) as 'Jobs Running', average(`aws.elasticmapreduce.JobsFailed`) as 'Jobs Failed' FROM Metric UNTIL 5 minutes ago facet entity.name"
+                                "query": "SELECT average(`aws.elasticmapreduce.JobsRunning`) as 'Jobs Running', average(`aws.elasticmapreduce.JobsFailed`) as 'Jobs Failed' FROM Metric TIMESERIES auto UNTIL 5 minutes ago FACET entity.name"
                             }
                         ]
                     }
