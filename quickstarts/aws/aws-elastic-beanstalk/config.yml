@@ -33,8 +33,5 @@ keywords:
   - aws
   - amazon web services
   - deploy
-dashboards:
-  - aws-elasticbeanstalk-environments
-  - aws-elasticbeanstalk-instances
 installPlans:
   - aws-cloudwatch-metric-streams
